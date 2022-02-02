@@ -1,0 +1,256 @@
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {}
+        /*logobar*/
+        
+        .logobar {
+            background-color: black;
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 30px;
+            border-radius: 3px;
+            border-color: thistle;
+            overflow: hidden;
+            padding: 0px;
+        }
+        
+        .logo-bar-buttons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+         ::placeholder {
+            color: white;
+        }
+        
+        .logo-bar-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            border: white;
+            box-shadow: none;
+            margin: 0 5px;
+        }
+        
+        .logo-bar-buttons a:hover {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            border: white;
+            box-shadow: none;
+        }
+        
+        .search {
+            color: white;
+            background-color: black;
+            border: 1px solid white;
+            outline: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        
+        .search::placeholder {
+            color: white;
+        }
+        
+        .search:hover {
+            color: black;
+            background-color: white;
+        }
+        
+        .cards {
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 50px 0px;
+            background-color: white;
+        }
+        
+        .card-details a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            text-decoration: none;
+            border: 1px black solid;
+            position: relative;
+            color: white;
+            background-color: black;
+        }
+        
+        .card-details a:hover {
+            color: black;
+            background-color: whitesmoke;
+        }
+        
+        .container .card {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background-color: #fff;
+            margin: 50px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+        
+        .container .card:hover {
+            height: 280px;
+        }
+        
+        .container .card .card-photo {
+            position: absolute;
+            width: 180px;
+            height: 170px;
+            top: -30%;
+            left: 50%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transform: translate(-50%, 0%);
+        }
+        
+        .container .card .image img {
+            max-width: 100%;
+            border-radius: 15px;
+            background-position: center;
+            background-size: contain;
+        }
+        
+        .container .card .card-details {
+            position: absolute;
+            top: 30%;
+            padding: 10px 15px;
+            padding-bottom: 0px;
+            color: #111;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        
+        .container .card:hover .card-details {
+            margin-top: 50px;
+            visibility: visible;
+            opacity: 1;
+            transition-delay: 0.2s;
+        }
+        
+        .footer {
+            text-align: center;
+            background: black;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            bottom: 0%;
+            position: relative;
+        }
+        
+        .leftpart {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            padding-top: 80px;
+            padding-right: 100px;
+            border-right: 4px solid black;
+        }
+        
+        .leftpart>* {
+            padding: 10px;
+        }
+        
+        .login-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            position: relative;
+            margin: 80px;
+            margin-top: 40px;
+            padding: 40px;
+            justify-content: space-between;
+        }
+        
+        .form {
+            border: 1px black solid;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: black;
+            color: white;
+        }
+        
+        .form>* {
+            padding: 10px;
+            color: white;
+        }
+        
+        .form input {
+            border: 2px solid white;
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        .form button {
+            text-decoration: none;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form button:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        .form button a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .form button:hover a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .head-text {
+            position: relative;
+            margin: 10px;
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-align: center;
+            border: 2px solid black;
+            border-bottom: none;
+            border-top: none;
+            text-decoration: underline;
+        }
